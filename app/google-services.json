@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "102938475610",
+    "project_id": "cours-pwa-m2-hub",
+    "storage_bucket": "cours-pwa-m2-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102938475610:android:corsicauniversitacarnet",
+        "android_client_info": {
+          "package_name": "corsica.universita.carnet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDummyKeyForCourseStarterBuild0000000"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

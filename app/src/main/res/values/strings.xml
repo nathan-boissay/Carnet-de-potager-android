@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Carnet de Potager</string>
+    <string name="draft_name_hint">Nom de la plante (ex : Tomate Marmande)</string>
+    <string name="draft_category_hint">Catégorie (ex : Solanacée, Aromatique)</string>
+    <string name="draft_interval_hint">Intervalle d\'arrosage (jours)</string>
+    <string name="draft_notes_hint">Conseil ou note de culture…</string>
+    <string name="add_plant">Ajouter au potager</string>
+    <string name="open_pwa">Ouvrir ma PWA</string>
+    <string name="copy_fcm_token">Copier mon jeton FCM</string>
+    <string name="channel_sync_name">Synchronisation du potager</string>
+    <string name="channel_sync_desc">Notifications silencieuses à la fin de l\'envoi des fiches hors-ligne.</string>
+    <string name="channel_hub_name">Alertes d\'arrosage &amp; Push</string>
+    <string name="channel_hub_desc">Rappels d\'arrosage prioritaires et messages reçus en arrière-plan.</string>
+    <string name="notif_sync_title">Potager synchronisé</string>
+
+    <plurals name="plants_count">
+        <item quantity="one">%d plante enregistrée</item>
+        <item quantity="other">%d plantes enregistrées</item>
+    </plurals>
+
+    <plurals name="pending_sync_count">
+        <item quantity="one">⏳ %d fiche en attente d\'envoi</item>
+        <item quantity="other">⏳ %d fiches en attente d\'envoi</item>
+    </plurals>
+
+    <plurals name="notif_sync_text">
+        <item quantity="one">%d fiche de plante envoyée au serveur</item>
+        <item quantity="other">%d fiches de plantes envoyées au serveur</item>
+    </plurals>
+</resources>
+

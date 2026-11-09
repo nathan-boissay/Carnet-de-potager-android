@@ -1,0 +1,33 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "b2c3d4e5f60718293a4b5c6d7e8f90a1",
+    "entities": [
+      {
+        "tableName": "plants",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `category` TEXT NOT NULL, `plantedAt` TEXT NOT NULL, `waterInterval` INTEGER NOT NULL, `lastWatered` TEXT NOT NULL, `notes` TEXT NOT NULL, `createdAt` INTEGER NOT NULL, `pinned` INTEGER NOT NULL DEFAULT 0)",
+        "fields": [
+          { "fieldPath": "id", "columnName": "id", "affinity": "INTEGER", "notNull": true },
+          { "fieldPath": "name", "columnName": "name", "affinity": "TEXT", "notNull": true },
+          { "fieldPath": "category", "columnName": "category", "affinity": "TEXT", "notNull": true },
+          { "fieldPath": "plantedAt", "columnName": "plantedAt", "affinity": "TEXT", "notNull": true },
+          { "fieldPath": "waterInterval", "columnName": "waterInterval", "affinity": "INTEGER", "notNull": true },
+          { "fieldPath": "lastWatered", "columnName": "lastWatered", "affinity": "TEXT", "notNull": true },
+          { "fieldPath": "notes", "columnName": "notes", "affinity": "TEXT", "notNull": true },
+          { "fieldPath": "createdAt", "columnName": "createdAt", "affinity": "INTEGER", "notNull": true },
+          { "fieldPath": "pinned", "columnName": "pinned", "affinity": "INTEGER", "notNull": true, "defaultValue": "0" }
+        ],
+        "primaryKey": { "autoGenerate": true, "columnNames": ["id"] },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'b2c3d4e5f60718293a4b5c6d7e8f90a1')"
+    ]
+  }
+}
+
